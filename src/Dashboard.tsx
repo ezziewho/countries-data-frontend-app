@@ -74,6 +74,14 @@ const Dashboard = () => {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 5)
     .map(([cur, count]) => `${cur} (${count})`);
+  const topLanguagesDisplay = topLanguagesArr.map((lang, i) => (
+    <span key={lang}>
+      {lang}
+      {i < topLanguagesArr.length - 1 ? ", " : ""}
+      <br />
+    </span>
+  ));
+
   const topCurrenciesDisplay = topCurrenciesArr.map((cur, i) => (
     <span key={cur}>
       {cur}
@@ -114,6 +122,7 @@ const Dashboard = () => {
   return (
     <div className="App">
       <div className="dashboard-header">
+        <h1>Dashboard</h1>
         <button
           onClick={() => navigate("/")}
           style={{ padding: "0.5rem 1.2rem" }}
@@ -128,7 +137,7 @@ const Dashboard = () => {
         </div>
         <div className="dashboard-card">
           <div className="label">Top 5 languages</div>
-          <div className="value">{topLanguages}</div>
+          <div className="value">{topLanguagesDisplay}</div>
         </div>
         <div className="dashboard-card">
           <div className="label">Top 5 currencies</div>
@@ -174,7 +183,8 @@ const Dashboard = () => {
             </span>
           </div>
         </div>
-        <Bar
+        
+        <Bar className="bar-chart"
           data={chartData}
           options={{
             responsive: true,
