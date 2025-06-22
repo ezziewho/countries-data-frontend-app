@@ -1,7 +1,7 @@
 # Candidate name and e-mail
 
-Name: Elżbieta Wilczek
-E-mail: elzbietawilczek00@gmail.com
+- Name: Elżbieta Wilczek
+- E-mail: elzbietawilczek00@gmail.com
 
 # Country Dashboard React App
 
