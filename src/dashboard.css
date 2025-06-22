@@ -1,0 +1,101 @@
+.dashboard-header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+#dashboard-button {
+  margin-left: auto;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.dashboard-card {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+.dashboard-card .label {
+  font-size: 1.1rem;
+  color: #64748b;
+}
+.dashboard-card .value {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.dashboard-card .big-value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.dashboard-toggle-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.dashboard-toggle-row span {
+  margin-right: 8px;
+}
+.dashboard-toggle {
+  display: flex;
+  align-items: center;
+}
+.dashboard-toggle .toggle-label {
+  font-weight: normal;
+}
+.dashboard-toggle .toggle-label.selected {
+  font-weight: bold;
+}
+.dashboard-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 8px;
+}
+.dashboard-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.dashboard-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+.dashboard-switch input:checked + .slider {
+  background-color: #2196F3;
+}
+.dashboard-switch .knob {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.dashboard-switch input:checked + .slider + .knob {
+  left: 26px;
+}
