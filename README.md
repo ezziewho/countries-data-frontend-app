@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Candidate name and e-mail
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Name: Elżbieta Wilczek
+E-mail: elzbietawilczek00@gmail.com
 
-## Available Scripts
+# Country Dashboard React App
 
-In the project directory, you can run:
+This project is a modern, responsive React application for displaying and analyzing country data. It features a sortable and filterable table, a dashboard with summary statistics, and interactive charts.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Sortable and filterable table of countries
+- Search and filter by population range
+- Dashboard with summary statistics (top languages, currencies, averages)
+- Bar chart for top 20 countries by population or area
+- Responsive, clean UI
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js (v16 or higher recommended)
+- npm (comes with Node.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. **Clone the repository** (if you haven't already):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```sh
+   git clone <your-repo-url>
+   cd react_project_recruttion/my-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```sh
+   npm install
+   ```
 
-### `npm run eject`
+3. **Start the development server:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```sh
+   npm start
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   This will open the app in your browser at [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. **Build for production:**
+   ```sh
+   npm run build
+   ```
+   The optimized build will be in the `build/` folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+- `src/`
+  - `App.tsx` - Main app and routing
+  - `TableOfCountries.tsx` - Table view
+  - `Dashboard.tsx` - Dashboard view
+  - `tableOfCountries.css` - Table styles
+  - `dashboard.css` - Dashboard styles
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The app fetches live data from the [REST Countries API](https://restcountries.com/).
+- For any issues, ensure your Node.js and npm are up to date.
+
+---
+
+Enjoy exploring country data!
